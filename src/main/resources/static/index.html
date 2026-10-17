@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="es">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda CarritoGT</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; }
+        header { text-align: center; margin-bottom: 30px; }
+        .grid-productos { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+        .product-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 200px; text-align: center; }
+        .product-card img { max-width: 100%; height: auto; border-radius: 4px; }
+        aside { margin-top: 40px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .cart-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #eee; }
+        button { background: #007bff; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        button.delete-btn { background: #dc3545; }
+        button.delete-btn:hover { background: #c82333; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Catálogo de Productos - CarritoGT</h1>
+    <p>Migración de PHP a Spring Boot (API REST)</p>
+</header>
+
+<main>
+    <section>
+        <h2>Productos Disponibles</h2>
+        <div id="product-list" class="grid-productos">
+        </div>
+    </section>
+
+    <aside>
+        <h2>Tu Carrito de Compras</h2>
+        <div id="cart-list">
+            <p>El carrito está vacío...</p>
+        </div>
+    </aside>
+</main>
+
+
+<script src="app.js"></script>
+</body>
+</html>
