@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title><!DOCTYPE html>
-        <html lang="es">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tienda CarritoGT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda CarritoGT</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; }
         header { text-align: center; margin-bottom: 30px; }
@@ -30,12 +26,15 @@
 </header>
 
 <main>
+    <!-- Sección donde la API listará los productos disponibles (RF-01) -->
     <section>
         <h2>Productos Disponibles</h2>
         <div id="product-list" class="grid-productos">
+            <!-- Los productos se cargarán dinámicamente mediante JavaScript -->
         </div>
     </section>
 
+    <!-- Sección donde se visualizará el contenido actual del carrito (RF-04) -->
     <aside>
         <h2>Tu Carrito de Compras</h2>
         <div id="cart-list">
@@ -44,7 +43,7 @@
     </aside>
 </main>
 
-
+<!-- Enlace al archivo JavaScript que consume los endpoints REST -->
 <script src="app.js"></script>
 </body>
 </html>
